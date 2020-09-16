@@ -10,7 +10,7 @@ namespace ComRPG.Items
     {
         //Armors
         List<Helmet> helmetList = new List<Helmet>();
-        List<Chestplates> chestplateList = new List<Chestplates>();
+        List<Chestplate> chestplateList = new List<Chestplate>();
         List<Gloves> gloveList = new List<Gloves>();
         List<Leggings> leggingList = new List<Leggings>();
         List<Boots> bootsList = new List<Boots>();
