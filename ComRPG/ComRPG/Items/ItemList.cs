@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ComRPG
+namespace ComRPG.Items
 {
     class ItemList
     {
