@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ComRPG.Items
+namespace ComRPG.Items.Armors
 {
-    class Helmet
+    class Gloves
     {
     }
 }
