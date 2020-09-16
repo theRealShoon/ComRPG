@@ -7,7 +7,7 @@ namespace ComRPG
 {
     class Game
     {
-        public void Start()
+        public void Start() // Starts the game process
         {
             Initialize();
             while (true)
@@ -15,11 +15,11 @@ namespace ComRPG
                 Run();
             }
         }
-        private void Initialize()
+        private void Initialize() // Sets all the variables 
         { 
 
         }
-        private void Run()
+        private void Run() // Loop when running
         { 
         
         }

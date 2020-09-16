@@ -6,6 +6,6 @@ namespace ComRPG
 {
     class Player
     {
-        public string name { get; set; }
+        public string name { get; set; } // Stores the name for the player
     }
 }

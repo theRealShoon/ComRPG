@@ -8,8 +8,8 @@ namespace ComRPG
     {
         static void Main(string[] args)
         {
-            Game game = new Game();
-            game.Start();
+            Game game = new Game(); // Initialized game
+            game.Start(); // Starts game
         }
     }
 }
