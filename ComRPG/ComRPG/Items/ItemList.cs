@@ -6,5 +6,6 @@ namespace ComRPG.Items
 {
     class ItemList
     {
+        List<Helmet> helmetList = new List<Helmet>();
     }
 }
