@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace ComRPG
 {
@@ -6,7 +7,7 @@ namespace ComRPG
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Game game = new Game();
         }
     }
 }
