@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using ComRPG.Items;
+using ComRPG.Items.Armors;
+using ComRPG.Items.Weapons;
 
 namespace ComRPG
 {
