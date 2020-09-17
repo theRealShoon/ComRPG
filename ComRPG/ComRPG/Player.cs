@@ -21,7 +21,37 @@ namespace ComRPG
         Boots boots { get; set; }
 
         //Weapon
+        Weapon weapon { get; set; }
 
         //Stats
+        public double hpCurrent { get; set; }
+        public double hpMax { get; set; }
+        //Methods
+        public void Initialize()
+        {
+            InitializeArmors();
+            InitializeWeapons();
+            InitializeStats();
+        }
+        private void InitializeArmors()
+        {
+            helmet = null;
+            amulet = null;
+            chestplate = null;
+            gloves = null;
+            ringOne = null;
+            ringTwo = null;
+            leggings = null;
+            boots = null;
+        }
+        private void InitializeWeapons()
+        {
+            weapon = null;
+        }
+        private void InitializeStats()
+        {
+            hpCurrent = 50;
+            hpMax = 50;
+        }
     }
 }

@@ -11,6 +11,7 @@ namespace ComRPG
 {
     class Game
     {
+        Player player = new Player();
         public void Start() // Starts the game process
         {
             Initialize();
@@ -20,8 +21,8 @@ namespace ComRPG
             }
         }
         private void Initialize() // Sets all the variables 
-        { 
-
+        {
+            player.Initialize();
         }
         private void Run() // Loop when running
         {
