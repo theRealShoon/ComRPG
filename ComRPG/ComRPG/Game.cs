@@ -12,25 +12,44 @@ namespace ComRPG
 {
     class Game
     {
+        #region Globals
         Player player = new Player();
         ItemList itemDatalogue = new ItemList();
+
+        #endregion
+
+        #region Run Processes
+
         public void Start() // Starts the game process
         {
-            Initialize();
+            InitializeGameData();
             while (true)
             {
                 Run();
             }
         }
-        private void Initialize() // Sets all the variables 
-        {
-            itemDatalogue.Initialize();
-            player.Initialize(itemDatalogue);
-        }
         private void Run() // Loop when running
         {
             SwitchMenu();
         }
+        public void End()
+        {
+            Environment.Exit(0);
+        }
+        #endregion
+
+        #region Initializations
+        private void InitializeGameData() // Sets all the variables 
+        {
+            itemDatalogue.Initialize();
+        }
+        private void InitializePlayerData()
+        {
+            player.Initialize(itemDatalogue);
+        }
+        #endregion
+
+        #region Menus
         private void SwitchMenu()
         {
             Console.Clear();
@@ -40,6 +59,9 @@ namespace ComRPG
                 var input = Console.ReadKey().Key;
                 switch (input)
                 {
+                    case ConsoleKey.D1:
+                        InitializeGameData();
+                        break;
                     case ConsoleKey.Q:
                         End();
                         break;
@@ -48,9 +70,11 @@ namespace ComRPG
             }
             
         }
-        public void End()
-        {
-            Environment.Exit(0);
-        }
+
+        #endregion
+
+        #region Private Practices
+
+        #endregion
     }
 }
