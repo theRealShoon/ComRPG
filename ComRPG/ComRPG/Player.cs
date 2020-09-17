@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using ComRPG.Items;
 using ComRPG.Items.Armors;
 using ComRPG.Items.Weapons;
 
@@ -11,7 +12,7 @@ namespace ComRPG
         public string name { get; set; } // Stores the name for the player
 
         //Armor
-        Helmet helmet { get; set; }
+        public Helmet helmet { get; set; }
         Amulet amulet { get; set; }
         Chestplate chestplate { get; set; }
         Gloves gloves { get; set; }
@@ -27,15 +28,15 @@ namespace ComRPG
         public double hpCurrent { get; set; }
         public double hpMax { get; set; }
         //Methods
-        public void Initialize()
+        public void Initialize(ItemList itemDatalogue)
         {
-            InitializeArmors();
-            InitializeWeapons();
+            InitializeArmors(itemDatalogue);
+            InitializeWeapons(itemDatalogue);
             InitializeStats();
         }
-        private void InitializeArmors()
+        private void InitializeArmors(ItemList itemDatalogue)
         {
-            helmet = null;
+            helmet = itemDatalogue.helmetList[0];
             amulet = null;
             chestplate = null;
             gloves = null;
@@ -44,7 +45,7 @@ namespace ComRPG
             leggings = null;
             boots = null;
         }
-        private void InitializeWeapons()
+        private void InitializeWeapons(ItemList itemDatalogue)
         {
             weapon = null;
         }

@@ -24,7 +24,7 @@ namespace ComRPG
         private void Initialize() // Sets all the variables 
         {
             itemDatalogue.Initialize();
-            player.Initialize();
+            player.Initialize(itemDatalogue);
         }
         private void Run() // Loop when running
         {

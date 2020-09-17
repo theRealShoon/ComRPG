@@ -32,8 +32,10 @@ namespace ComRPG.Items
             CreateWeapons();
         }
         private void CreateHelmets()
-        { 
-        
+        {
+            Helmet newHelmet = new Helmet();
+            newHelmet.name = "Nothing";
+            helmetList.Add(newHelmet);
         }
         private void CreateAmulets()
         { 
