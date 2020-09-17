@@ -9,16 +9,16 @@ namespace ComRPG.Items
     class ItemList
     {
         //Armors
-        List<Helmet> helmetList = new List<Helmet>();
-        List<Amulet> amuletList = new List<Amulet>();
-        List<Ring> ringList = new List<Ring>();
-        List<Chestplate> chestplateList = new List<Chestplate>();
-        List<Gloves> gloveList = new List<Gloves>();
-        List<Leggings> leggingList = new List<Leggings>();
-        List<Boots> bootsList = new List<Boots>();
+        public List<Helmet> helmetList = new List<Helmet>();
+        public List<Amulet> amuletList = new List<Amulet>();
+        public List<Ring> ringList = new List<Ring>();
+        public List<Chestplate> chestplateList = new List<Chestplate>();
+        public List<Gloves> gloveList = new List<Gloves>();
+        public List<Leggings> leggingList = new List<Leggings>();
+        public List<Boots> bootsList = new List<Boots>();
 
         //Weapons
-        List<Weapon> weaponList = new List<Weapon>();
+        public List<Weapon> weaponList = new List<Weapon>();
 
         public void Initialize()
         {

@@ -6,5 +6,6 @@ namespace ComRPG.Items.Armors
 {
     class Boots
     {
+        public string Name { get; set; }
     }
 }

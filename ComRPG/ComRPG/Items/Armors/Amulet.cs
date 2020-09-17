@@ -6,5 +6,6 @@ namespace ComRPG.Items.Armors
 {
     class Amulet
     {
+        public string Name { get; set; }
     }
 }
