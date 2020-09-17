@@ -6,6 +6,6 @@ namespace ComRPG.Items.Armors
 {
     class Leggings
     {
-        public string Name { get; set; }
+        public string name { get; set; }
     }
 }

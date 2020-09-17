@@ -6,6 +6,6 @@ namespace ComRPG.Items.Armors
 {
     class Ring
     {
-        public string Name { get; set; }
+        public string name { get; set; }
     }
 }

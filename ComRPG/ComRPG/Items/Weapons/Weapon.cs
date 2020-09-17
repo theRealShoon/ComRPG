@@ -7,7 +7,7 @@ namespace ComRPG.Items.Weapons
     class Weapon
     {
         int WeaponType { get; set; }
-        public string Name { get; set; }
+        public string name { get; set; }
     }
     public enum WeaponTypes
     {
