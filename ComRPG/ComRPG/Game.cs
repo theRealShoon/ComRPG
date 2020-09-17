@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
+using ComRPG.Items;
+using ComRPG.Items.Armors;
+using ComRPG.Items.Weapons;
+
 
 namespace ComRPG
 {
@@ -20,6 +24,10 @@ namespace ComRPG
 
         }
         private void Run() // Loop when running
+        {
+
+        }
+        private void SwitchMenu()
         { 
         
         }
