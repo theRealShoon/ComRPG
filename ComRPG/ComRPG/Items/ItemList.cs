@@ -18,8 +18,6 @@ namespace ComRPG.Items
         List<Boots> bootsList = new List<Boots>();
 
         //Weapons
-        List<Sword> swordList = new List<Sword>();
-        List<ShortBow> shortbowList = new List<ShortBow>();
-        List<LongBow> longbowList = new List<LongBow>();
+        List<Weapon> weaponList = new List<Weapon>();
     }
 }

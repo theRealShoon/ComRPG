@@ -21,5 +21,7 @@ namespace ComRPG
         Boots boots { get; set; }
 
         //Weapon
+
+        //Stats
     }
 }
