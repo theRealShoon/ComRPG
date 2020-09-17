@@ -19,5 +19,38 @@ namespace ComRPG.Items
 
         //Weapons
         List<Weapon> weaponList = new List<Weapon>();
+
+        private void CreateHelmet()
+        { 
+        
+        }
+        private void CreateAmulets()
+        { 
+        
+        }
+        private void CreateRings()
+        { 
+        
+        }
+        private void CreateChestplate()
+        { 
+        
+        }
+        private void CreateGloves()
+        { 
+        
+        }
+        private void CreateLeggings()
+        { 
+        
+        }
+        private void CreateBoots()
+        { 
+        
+        }
+        private void CreateWeapons()
+        { 
+            
+        }
     }
 }
