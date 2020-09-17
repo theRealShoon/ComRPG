@@ -36,7 +36,7 @@ namespace ComRPG
             Console.Clear();
             while (true)
             {
-                Console.WriteLine("[Q] Exit");
+                Console.WriteLine("[1] Start\n[2] Load\n[3] Settings\n[Q] Exit");
                 var input = Console.ReadKey().Key;
                 switch (input)
                 {
