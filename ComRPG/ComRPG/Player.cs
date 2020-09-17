@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Xml;
 using ComRPG.Items;
 using ComRPG.Items.Armors;
 using ComRPG.Items.Weapons;
@@ -33,6 +34,7 @@ namespace ComRPG
             InitializeArmors(itemDatalogue);
             InitializeWeapons(itemDatalogue);
             InitializeStats();
+            name = "Guest";
         }
         private void InitializeArmors(ItemList itemDatalogue)
         {

@@ -75,9 +75,11 @@ namespace ComRPG.Items
         }
         private void CreateWeapons()
         {
-            Weapon newWeapon = new Weapon();
-            newWeapon.name = "Nothing";
-            newWeapon.weaponType = Convert.ToInt32(WeaponTypes.Nothing);
+            Weapon newWeapon = new Weapon
+            {
+                name = "Nothing",
+                weaponType = Convert.ToInt32(WeaponTypes.Nothing)
+            };
             weaponList.Add(newWeapon);
         }
     }

@@ -28,11 +28,12 @@ namespace ComRPG
         }
         private void Run() // Loop when running
         {
-
+            SwitchMenu();
         }
         private void SwitchMenu()
-        { 
-        
+        {
+            Console.Clear();
+            Console.WriteLine("");
         }
     }
 }
