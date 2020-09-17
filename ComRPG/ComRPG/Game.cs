@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading;
 using ComRPG.Items;
 using ComRPG.Items.Armors;
 using ComRPG.Items.Weapons;
@@ -33,7 +34,23 @@ namespace ComRPG
         private void SwitchMenu()
         {
             Console.Clear();
-            Console.WriteLine("");
+            while (true)
+            {
+                Console.WriteLine("[Q] Exit");
+                var input = Console.ReadKey().Key;
+                switch (input)
+                {
+                    case ConsoleKey.Q:
+                        End();
+                        break;
+                }
+                Console.Clear();
+            }
+            
+        }
+        public void End()
+        {
+            Environment.Exit(0);
         }
     }
 }
