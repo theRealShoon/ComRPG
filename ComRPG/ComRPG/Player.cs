@@ -39,11 +39,11 @@ namespace ComRPG
             helmet = itemDatalogue.helmetList[0];
             amulet = itemDatalogue.amuletList[0];
             chestplate = itemDatalogue.chestplateList[0];
-            gloves = null;
-            ringOne = null;
-            ringTwo = null;
-            leggings = null;
-            boots = null;
+            gloves = itemDatalogue.gloveList[0];
+            ringOne = itemDatalogue.ringList[0];
+            ringTwo = itemDatalogue.ringList[0];
+            leggings = itemDatalogue.leggingList[0];
+            boots = itemDatalogue.bootsList[0];
         }
         private void InitializeWeapons(ItemList itemDatalogue)
         {
