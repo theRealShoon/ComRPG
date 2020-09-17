@@ -13,13 +13,13 @@ namespace ComRPG
 
         //Armor
         public Helmet helmet { get; set; }
-        Amulet amulet { get; set; }
-        Chestplate chestplate { get; set; }
-        Gloves gloves { get; set; }
-        Ring ringOne { get; set; }
-        Ring ringTwo { get; set; }
-        Leggings leggings { get; set; }
-        Boots boots { get; set; }
+        public Amulet amulet { get; set; }
+        public Chestplate chestplate { get; set; }
+        public Gloves gloves { get; set; }
+        public Ring ringOne { get; set; }
+        public Ring ringTwo { get; set; }
+        public Leggings leggings { get; set; }
+        public Boots boots { get; set; }
 
         //Weapon
         public Weapon weapon { get; set; }
