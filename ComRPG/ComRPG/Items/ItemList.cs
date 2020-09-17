@@ -38,32 +38,47 @@ namespace ComRPG.Items
             helmetList.Add(newHelmet);
         }
         private void CreateAmulets()
-        { 
-        
+        {
+            Amulet newAmulet = new Amulet();
+            newAmulet.name = "Nothing";
+            amuletList.Add(newAmulet);
         }
         private void CreateRings()
-        { 
-        
+        {
+            Ring newRing = new Ring();
+            newRing.name = "Nothing";
+            ringList.Add(newRing);
         }
         private void CreateChestplates()
-        { 
-        
+        {
+            Chestplate newChestplate = new Chestplate();
+            newChestplate.name = "Nothing";
+            chestplateList.Add(newChestplate);
         }
         private void CreateGloves()
-        { 
-        
+        {
+            Gloves newGloves = new Gloves();
+            newGloves.name = "Nothing";
+            gloveList.Add(newGloves);
         }
         private void CreateLeggings()
-        { 
-        
+        {
+            Leggings newLeggings = new Leggings();
+            newLeggings.name = "Nothing";
+            leggingList.Add(newLeggings);
         }
         private void CreateBoots()
-        { 
-        
+        {
+            Boots newBoots = new Boots();
+            newBoots.name = "Nothing";
+            bootsList.Add(newBoots);
         }
         private void CreateWeapons()
-        { 
-            
+        {
+            Weapon newWeapon = new Weapon();
+            newWeapon.name = "Nothing";
+            newWeapon.weaponType = Convert.ToInt32(WeaponTypes.Nothing);
+            weaponList.Add(newWeapon);
         }
     }
 }

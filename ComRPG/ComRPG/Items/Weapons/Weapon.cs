@@ -6,7 +6,7 @@ namespace ComRPG.Items.Weapons
 {
     class Weapon
     {
-        int WeaponType { get; set; }
+        public int weaponType { get; set; }
         public string name { get; set; }
     }
     public enum WeaponTypes
@@ -18,5 +18,6 @@ namespace ComRPG.Items.Weapons
         Pistol,
         MarksmanRifles,
         HouseholdSupplies,
+        Nothing,
     }
 }

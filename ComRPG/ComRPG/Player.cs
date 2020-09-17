@@ -22,7 +22,7 @@ namespace ComRPG
         Boots boots { get; set; }
 
         //Weapon
-        Weapon weapon { get; set; }
+        public Weapon weapon { get; set; }
 
         //Stats
         public double hpCurrent { get; set; }
@@ -37,8 +37,8 @@ namespace ComRPG
         private void InitializeArmors(ItemList itemDatalogue)
         {
             helmet = itemDatalogue.helmetList[0];
-            amulet = null;
-            chestplate = null;
+            amulet = itemDatalogue.amuletList[0];
+            chestplate = itemDatalogue.chestplateList[0];
             gloves = null;
             ringOne = null;
             ringTwo = null;
@@ -47,7 +47,7 @@ namespace ComRPG
         }
         private void InitializeWeapons(ItemList itemDatalogue)
         {
-            weapon = null;
+            weapon = itemDatalogue.weaponList[0];
         }
         private void InitializeStats()
         {
