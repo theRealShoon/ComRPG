@@ -60,7 +60,8 @@ namespace ComRPG
                 switch (input)
                 {
                     case ConsoleKey.D1:
-                        InitializeGameData();
+                        InitializePlayerData();
+                        IngameMainScreen();
                         break;
                     case ConsoleKey.Q:
                         End();
@@ -68,13 +69,40 @@ namespace ComRPG
                 }
                 Console.Clear();
             }
-            
+
         }
 
+        private void IngameMainScreen()
+        {
+            Console.Clear();
+            bool isBackingOut = false;
+            while (true)
+            {
+                Console.WriteLine("[1] Adventure\n[2] Profile\n[3] Town\n[4] Settings\n[Q] Exit");
+                var input = Console.ReadKey().Key;
+                switch (input)
+                {
+                    case ConsoleKey.D2:
+                        break;
+                    case ConsoleKey.Q:
+                        isBackingOut = true;
+                        break;
+                }
+
+                if (isBackingOut == true)
+                {
+                    SaveGameData();
+                    break;
+                }
+            }
+        }
         #endregion
 
         #region Private Practices
-
+        private void SaveGameData()
+        { 
+        
+        }
         #endregion
     }
 }
