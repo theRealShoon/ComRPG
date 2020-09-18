@@ -33,8 +33,20 @@ namespace ComRPG.Items
         }
         private void CreateHelmets()
         {
+            //
             Helmet newHelmet = new Helmet();
             newHelmet.name = "Nothing";
+            newHelmet.defense = 0;
+            helmetList.Add(newHelmet);
+            // Taffy Set
+            newHelmet = new Helmet();
+            newHelmet.name = "Taffy's tin foil helmet";
+            newHelmet.defense = 0;
+            helmetList.Add(newHelmet);
+            // Ender Set
+            newHelmet = new Helmet();
+            newHelmet.name = "Enders Helmet";
+            newHelmet.defense = 15;
             helmetList.Add(newHelmet);
         }
         private void CreateAmulets()
@@ -42,6 +54,19 @@ namespace ComRPG.Items
             Amulet newAmulet = new Amulet();
             newAmulet.name = "Nothing";
             amuletList.Add(newAmulet);
+            //
+            newAmulet = new Amulet();
+            newAmulet.name = "Taffy's tin can on a string";
+            newAmulet.defense = 5;
+            newAmulet.magic = 100;
+            amuletList.Add(newAmulet);
+            //
+            newAmulet = new Amulet();
+            newAmulet.name = "Ender's Pearls";
+            newAmulet.defense = 5;
+            newAmulet.magic = 25;
+            amuletList.Add(newAmulet);
+
         }
         private void CreateRings()
         {
@@ -52,7 +77,7 @@ namespace ComRPG.Items
         private void CreateChestplates()
         {
             Chestplate newChestplate = new Chestplate();
-            newChestplate.name = "Nothing";
+            newChestplate.name = "Taffy's Jesu";
             chestplateList.Add(newChestplate);
         }
         private void CreateGloves()

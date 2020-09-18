@@ -56,5 +56,16 @@ namespace ComRPG
             hpCurrent = 50;
             hpMax = 50;
         }
+        public void ShowArmor()
+        {
+            Console.WriteLine("Helmet: {0}",helmet.name);
+            Console.WriteLine("Amulet: {0}", amulet.name);
+            Console.WriteLine("Chestplate: {0}", chestplate.name);
+            Console.WriteLine("Gloves: {0}", gloves.name);
+            Console.WriteLine("Ring One: {0}", ringOne.name);
+            Console.WriteLine("Ring Two: {0}", ringTwo.name);
+            Console.WriteLine("Leggings: {0}", leggings.name);
+            Console.WriteLine("Boots: {0}", boots.name);
+        }
     }
 }

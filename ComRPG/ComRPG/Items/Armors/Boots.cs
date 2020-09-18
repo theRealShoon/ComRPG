@@ -7,5 +7,6 @@ namespace ComRPG.Items.Armors
     class Boots
     {
         public string name { get; set; }
+        public double defense { get; set; }
     }
 }
