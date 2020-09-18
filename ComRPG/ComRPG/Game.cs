@@ -94,7 +94,14 @@ namespace ComRPG
                     SaveGameData();
                     break;
                 }
+                Console.Clear();
             }
+        }
+
+        private void ProfileMenu()
+        {
+            Console.Clear();
+            bool isBackingOut = false;
         }
         #endregion
 
