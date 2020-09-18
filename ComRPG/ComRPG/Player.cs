@@ -25,6 +25,15 @@ namespace ComRPG
         //Weapon
         public Weapon weapon { get; set; }
 
+        //Inventories
+        public List<Helmet> helmetInventory = new List<Helmet>();
+        public List<Amulet> amuletInventory = new List<Amulet>();
+        public List<Chestplate> chestplateInventory = new List<Chestplate>();
+        public List<Gloves> glovesInventory = new List<Gloves>();
+        public List<Ring> ringInventory = new List<Ring>();
+        public List<Leggings> leggingsInventory = new List<Leggings>();
+        public List<Boots> bootsInventory = new List<Boots>();
+
         //Stats
         public double hpCurrent { get; set; }
         public double hpMax { get; set; }
@@ -66,6 +75,10 @@ namespace ComRPG
             Console.WriteLine("Ring Two: {0}", ringTwo.name);
             Console.WriteLine("Leggings: {0}", leggings.name);
             Console.WriteLine("Boots: {0}", boots.name);
+        }
+        public void ShowStats()
+        { 
+        
         }
     }
 }

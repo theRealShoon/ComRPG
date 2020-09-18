@@ -8,6 +8,9 @@ namespace ComRPG.Items.Weapons
     {
         public int weaponType { get; set; }
         public string name { get; set; }
+        public string description { get; set; }
+        public double attack { get; set; }
+        public double defense { get; set; }
     }
     public enum WeaponTypes
     {
