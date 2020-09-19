@@ -37,6 +37,10 @@ namespace ComRPG
         //Stats
         public double hpCurrent { get; set; }
         public double hpMax { get; set; }
+        public double lvl { get; set; }
+        public double exp { get; set; }
+        public double attack { get; set; }
+        public double defense { get; set; }
         //Methods
         public void Initialize(ItemList itemDatalogue)
         {
