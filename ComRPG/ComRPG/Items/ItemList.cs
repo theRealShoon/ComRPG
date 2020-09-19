@@ -122,7 +122,7 @@ namespace ComRPG.Items
         {
             Gloves newGloves = new Gloves();
             newGloves.name = "Nothing";
-            newGloves.description = "Look at you, naked hands having";
+            newGloves.description = "Look at you, naked hands";
             newGloves.defense = 0;
             gloveList.Add(newGloves);
             //
