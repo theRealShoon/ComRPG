@@ -11,6 +11,8 @@ namespace ComRPG.Items.Weapons
         public string description { get; set; }
         public double attack { get; set; }
         public double defense { get; set; }
+        public double magicAttack { get; set; }
+        public double magicDefense { get; set; }
     }
     public enum WeaponTypes
     {

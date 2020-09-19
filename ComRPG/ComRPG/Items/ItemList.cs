@@ -182,6 +182,8 @@ namespace ComRPG.Items
                 description = "Your weak fists",
                 attack = 5,
                 defense = 0,
+                magicAttack = 0,
+                magicDefense = 0,
             };
             weaponList.Add(newWeapon);
             newWeapon = new Weapon
@@ -191,6 +193,8 @@ namespace ComRPG.Items
                 description = "Your mother's new toaster oven",
                 attack = 35,
                 defense = 10,
+                magicAttack = 50,
+                magicDefense = 35,
             };
             weaponList.Add(newWeapon);
         }

@@ -10,5 +10,6 @@ namespace ComRPG.Items.Armors
         public string description { get; set; }
         public double defense { get; set; }
         public double magic { get; set; }
+        public double magicDefense { get; set; }
     }
 }

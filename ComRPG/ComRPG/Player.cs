@@ -70,6 +70,19 @@ namespace ComRPG
         {
             hpCurrent = 50;
             hpMax = 50;
+            attack = 3;
+            defense = 0;
+            magic = 0;
+            magicDefense = 0;
+        }
+        private void ResetStats()
+        {
+            attack = 3;
+            defense = 0;
+            magic = 0;
+            magicDefense = 0;
+            AddArmorStats();
+            AddWeaponStats();
         }
         public void ShowArmor()
         {
@@ -85,6 +98,17 @@ namespace ComRPG
         public void ShowStats()
         { 
         
+        }
+        private void AddArmorStats()
+        { 
+            
+        }
+        private void AddWeaponStats()
+        {
+            magic += weapon.magicAttack;
+            attack += weapon.attack;
+            defense += weapon.defense;
+            magicDefense += weapon.magicDefense;
         }
     }
 }
