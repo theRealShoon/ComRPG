@@ -14,7 +14,9 @@ namespace ComRPG.Enemies
         public double hp { get; set; }
         public double hpMax { get; set; }
         public double attack { get; set; }
+        public double magicAttack { get; set; }
         public double defense { get; set; }
+        public double magicDefense { get; set; }
         public List<Weapon> weaponDrops = new List<Weapon>();
         public List<Helmet> helmetDrops = new List<Helmet>();
         public List<Amulet> amuletDrops = new List<Amulet>();

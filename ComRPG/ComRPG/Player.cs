@@ -41,6 +41,8 @@ namespace ComRPG
         public double exp { get; set; }
         public double attack { get; set; }
         public double defense { get; set; }
+        public double magic { get; set; }
+        public double magicDefense { get; set; }
         //Methods
         public void Initialize(ItemList itemDatalogue)
         {
