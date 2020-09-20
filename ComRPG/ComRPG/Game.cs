@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
+using ComRPG.Enemies;
 using ComRPG.Items;
 using ComRPG.Items.Armors;
 using ComRPG.Items.Weapons;
@@ -15,6 +16,7 @@ namespace ComRPG
         #region Globals
         Player player = new Player();
         ItemList itemDatalogue = new ItemList();
+        EnemyList enemyDatalogue = new EnemyList();
 
         #endregion
 
@@ -84,6 +86,31 @@ namespace ComRPG
                 {
                     case ConsoleKey.D2:
                         ProfileMenu();
+                        break;
+                    case ConsoleKey.Q:
+                        isBackingOut = true;
+                        break;
+                }
+
+                if (isBackingOut == true)
+                {
+                    SaveGameData();
+                    break;
+                }
+                Console.Clear();
+            }
+        }
+        private void TownMenu()
+        {
+            Console.Clear();
+            bool isBackingOut = false;
+            while (true)
+            {
+                Console.WriteLine("[1] Rest\n[2] Shop\n[3] Settlers\n[Q] Back");
+                var input = Console.ReadKey().Key;
+                switch (input)
+                {
+                    case ConsoleKey.D1:
                         break;
                     case ConsoleKey.Q:
                         isBackingOut = true;

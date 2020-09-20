@@ -18,6 +18,11 @@ namespace ComRPG.Enemies
         private void CreateEnemies()
         {
             Enemy enemy = new Enemy();
+            enemy.name = "Homeless Person";
+            enemy.description = "A man that lost his home";
+            enemy.lvl = 1;
+            enemy.hp = 25;
+            enemy.hpMax = 25;
         }
     }
 }

@@ -40,6 +40,7 @@ namespace ComRPG
         public double hpMax { get; set; }
         public double lvl { get; set; }
         public double exp { get; set; }
+        public double money { get; set; }
         public double attack { get; set; }
         public double defense { get; set; }
         public double magic { get; set; }
@@ -74,6 +75,7 @@ namespace ComRPG
             hpMax = 50;
             lvl = 1;
             exp = 0;
+            money = 100;
             attack = 3;
             defense = 0;
             magic = 0;
