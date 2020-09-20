@@ -12,8 +12,12 @@ namespace ComRPG.Enemies
     {
         public List<Enemy> enemyList = new List<Enemy>();
         public void Initialize(ItemList itemDatalogue)
-        { 
-            
+        {
+            CreateEnemies();
+        }
+        private void CreateEnemies()
+        {
+            Enemy enemy = new Enemy();
         }
     }
 }

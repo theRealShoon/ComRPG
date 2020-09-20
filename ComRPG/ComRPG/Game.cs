@@ -112,6 +112,9 @@ namespace ComRPG
                     case ConsoleKey.D1:
                         ProfileInventory();
                         break;
+                    case ConsoleKey.D2:
+                        ProfileViewStats();
+                        break;
                     case ConsoleKey.Q:
                         isBackingOut = true;
                         break;
@@ -122,6 +125,8 @@ namespace ComRPG
                     SaveGameData();
                     break;
                 }
+
+                Console.Clear();
             }
         }
 
@@ -150,8 +155,28 @@ namespace ComRPG
             }
         }
         private void ProfileViewStats()
-        { 
-        
+        {
+            Console.Clear();
+            bool isBackingOut = false;
+            while (true)
+            {
+                player.ShowStats();
+                Console.WriteLine("\n[Q] Back");
+                var input = Console.ReadKey().Key;
+                switch (input)
+                {
+                    case ConsoleKey.Q:
+                        isBackingOut = true;
+                        break;
+                }
+
+                if (isBackingOut == true)
+                {
+                    SaveGameData();
+                    break;
+                }
+                Console.Clear();
+            }
         }
         #endregion
 

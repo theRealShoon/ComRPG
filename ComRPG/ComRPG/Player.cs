@@ -33,6 +33,7 @@ namespace ComRPG
         public List<Ring> ringInventory = new List<Ring>();
         public List<Leggings> leggingsInventory = new List<Leggings>();
         public List<Boots> bootsInventory = new List<Boots>();
+        public List<Weapon> weaponInventory = new List<Weapon>();
 
         //Stats
         public double hpCurrent { get; set; }
@@ -49,6 +50,7 @@ namespace ComRPG
             InitializeArmors(itemDatalogue);
             InitializeWeapons(itemDatalogue);
             InitializeStats();
+            ResetStats();
             name = "Guest";
         }
         private void InitializeArmors(ItemList itemDatalogue)
@@ -70,6 +72,8 @@ namespace ComRPG
         {
             hpCurrent = 50;
             hpMax = 50;
+            lvl = 1;
+            exp = 0;
             attack = 3;
             defense = 0;
             magic = 0;
@@ -96,12 +100,34 @@ namespace ComRPG
             Console.WriteLine("Boots: {0}", boots.name);
         }
         public void ShowStats()
-        { 
-        
+        {
+            Console.WriteLine("[{0}]", name);
+            Console.WriteLine("HP: {0}/{1}",hpCurrent,hpMax);
+            Console.WriteLine("LVL: {0}",lvl);
+            Console.WriteLine("EXP: {0}", exp);
+            Console.WriteLine("\nPhysical Attack: {0}", attack);
+            Console.WriteLine("Magical Attack: {0}", magic);
+            Console.WriteLine("Physical Defense: {0}", defense);
+            Console.WriteLine("Magical Defense: {0}", magicDefense);
         }
         private void AddArmorStats()
-        { 
-            
+        {
+            defense += helmet.defense;
+            defense += amulet.defense;
+            defense += chestplate.defense;
+            defense += chestplate.defense;
+            defense += ringOne.defense;
+            defense += ringTwo.defense;
+            defense += leggings.defense;
+            defense += boots.defense;
+
+            magic += amulet.magic;
+            magic += ringOne.magic;
+            magic += ringTwo.magic;
+
+            magicDefense += amulet.magicDefense;
+            magicDefense += ringOne.magicDefense;
+            magicDefense += ringTwo.magicDefense;
         }
         private void AddWeaponStats()
         {
