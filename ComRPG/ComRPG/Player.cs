@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Xml;
 using ComRPG.Items;
@@ -54,6 +55,16 @@ namespace ComRPG
             ResetStats();
             name = "Guest";
         }
+        public void Rest()
+        {
+            double minRest = 0;
+            double maxRest = hpMax / 2;
+
+            int minConv = Convert.ToInt32(minRest);
+            int maxConv = Convert.ToInt32(maxRest);
+
+
+        }
         private void InitializeArmors(ItemList itemDatalogue)
         {
             helmet = itemDatalogue.helmetList[0];
@@ -81,7 +92,7 @@ namespace ComRPG
             magic = 0;
             magicDefense = 0;
         }
-        private void ResetStats()
+        public void ResetStats()
         {
             attack = 3;
             defense = 0;
