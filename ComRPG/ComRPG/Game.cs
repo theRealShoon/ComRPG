@@ -87,6 +87,9 @@ namespace ComRPG
                     case ConsoleKey.D2:
                         ProfileMenu();
                         break;
+                    case ConsoleKey.D3:
+                        TownMenu();
+                        break;
                     case ConsoleKey.Q:
                         isBackingOut = true;
                         break;
@@ -111,6 +114,7 @@ namespace ComRPG
                 switch (input)
                 {
                     case ConsoleKey.D1:
+                        player.Rest();
                         break;
                     case ConsoleKey.Q:
                         isBackingOut = true;
@@ -125,7 +129,10 @@ namespace ComRPG
                 Console.Clear();
             }
         }
-
+        private void RestMenu()
+        { 
+            
+        }
         private void ProfileMenu()
         {
             Console.Clear();
