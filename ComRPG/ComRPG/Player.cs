@@ -63,7 +63,10 @@ namespace ComRPG
             int minConv = Convert.ToInt32(minRest);
             int maxConv = Convert.ToInt32(maxRest);
 
+            Random random = new Random();
+            int healedHP = random.Next(minConv, maxConv);
 
+            hpCurrent += healedHP;
         }
         private void InitializeArmors(ItemList itemDatalogue)
         {
