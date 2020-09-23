@@ -114,7 +114,7 @@ namespace ComRPG
                 switch (input)
                 {
                     case ConsoleKey.D1:
-                        player.Rest();
+                        RestMenu();
                         break;
                     case ConsoleKey.Q:
                         isBackingOut = true;
@@ -130,8 +130,29 @@ namespace ComRPG
             }
         }
         private void RestMenu()
-        { 
-            
+        {
+            Console.Clear();
+            string restString = player.Rest();
+            bool isBackingOut = false;
+            while (true)
+            {
+                Console.WriteLine(restString);
+                Console.WriteLine("\n[Q] Back");
+                var input = Console.ReadKey().Key;
+                switch (input)
+                {
+                    case ConsoleKey.Q:
+                        isBackingOut = true;
+                        break;
+                }
+
+                if (isBackingOut == true)
+                {
+                    SaveGameData();
+                    break;
+                }
+                Console.Clear();
+            }
         }
         private void ProfileMenu()
         {

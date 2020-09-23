@@ -55,8 +55,10 @@ namespace ComRPG
             ResetStats();
             name = "Guest";
         }
-        public void Rest()
+        public string Rest()
         {
+            double previousHp = hpCurrent;
+            
             double minRest = 0;
             double maxRest = hpMax / 2;
 
@@ -67,6 +69,15 @@ namespace ComRPG
             int healedHP = random.Next(minConv, maxConv);
 
             hpCurrent += healedHP;
+
+            if (hpCurrent > hpMax)
+            {
+                hpCurrent = hpMax;
+            }
+
+            string changed = previousHp + "/" + hpMax + "-> " + hpCurrent + "/" + hpMax;
+
+            return changed;
         }
         private void InitializeArmors(ItemList itemDatalogue)
         {
