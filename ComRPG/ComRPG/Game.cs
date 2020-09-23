@@ -80,7 +80,7 @@ namespace ComRPG
             bool isBackingOut = false;
             while (true)
             {
-                Console.WriteLine("[1] Adventure\n[2] Profile\n[3] Town\n[4] Settings\n[Q] Exit");
+                Console.WriteLine("[1] Adventure\n[2] Profile\n[3] City\n[4] Settings\n[Q] Exit");
                 var input = Console.ReadKey().Key;
                 switch (input)
                 {
@@ -109,7 +109,7 @@ namespace ComRPG
             bool isBackingOut = false;
             while (true)
             {
-                Console.WriteLine("[1] Rest\n[2] Shop\n[3] Settlers\n[Q] Back");
+                Console.WriteLine("[1] Rest\n[2] Shop\n[3] City Mercenaries\n[Q] Back");
                 var input = Console.ReadKey().Key;
                 switch (input)
                 {
